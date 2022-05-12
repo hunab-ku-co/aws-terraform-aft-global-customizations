@@ -12,7 +12,7 @@ data "aws_iam_policy_document" "assume_role" {
     actions = ["sts:AssumeRole"]
     principals {
       type        = "AWS"
-      identifiers = ["arn:aws:iam::606864724315:user/github_actions_user"]
+      identifiers = ["arn:aws:iam::606864724315:user/github_actions_user", "arn:aws:iam::571206916952:user/miklas.siivonen@tietoevry.com"]
     }
   }
 }
