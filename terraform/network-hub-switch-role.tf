@@ -42,7 +42,10 @@ resource "aws_iam_policy" "assume_role_policy" {
             "ec2:CreateTransitGatewayVpcAttachment",
             "ec2:DescribeTransitGatewayVpcAttachments",
             "ec2:DescribeTransitGatewayAttachments",
-            "ec2:DescribeTransitGateways"
+            "ec2:DescribeTransitGateways",
+            "ec2:AcceptTransitGatewayVpcAttachment",
+            "ec2:DeleteTransitGatewayVpcAttachment",
+            "iam:CreateServiceLinkedRole"
         ],
         "Resource": "*"
       },
